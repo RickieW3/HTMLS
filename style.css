@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Nunito:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #1d232a;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+}
+.navbar {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  background-color: #191e24;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 3rem 1.5rem;
+  background:
+    linear-gradient(rgba(8, 84, 130, 0.8), rgba(4, 70, 115, 0.8)),
+    url("img/shop2.jpg") center / cover fixed;
+  text-align: center;
+}
+.hero__content {
+  width: min(85rem, 100%);
+  padding: 2rem;
+}
+.hero h1 {
+  margin-bottom: 1rem;
+  font-family: "Creepster", cursive;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.hero h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 4vw, 2.8rem);
+}
+.hero h6 {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.hero p {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+button {
+  padding: 0.9rem 2rem;
+  border: 0;
+  border-radius: 5rem;
+  background-color: #ff4f9a;
+  color: white;
+  font: inherit;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #e52e7e;
+}
+.about {
+  width: min(80%, 75rem);
+  margin: 3rem auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.about h2,
+.content h2,
+.image-section h2 {
+  margin-bottom: 1.5rem;
+  color: #ff4f9a;
+  font-size: 2.2rem;
+}
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: min(30rem, calc(100% - 2rem));
+  min-height: 20rem;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  background-color: #191e24;
+}
+.content h2 {
+  text-align: center;
+}
+.content li {
+  margin: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+}
+.image-section {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.image-section img {
+  display: block;
+  width: min(25rem, 100%);
+  margin: 0 auto 1.5rem;
+  border-radius: 0.8rem;
+}
+.image-section p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.image-section a {
+  color: #ff4f9a;
+  font-size: 1.2rem;
+}
+.image-section a:hover {
+  color: #ff4f9a;
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem 1.2rem;
+  }
+  .hero {
+    min-height: 80vh;
+    background-attachment: scroll;
+  }
+}
